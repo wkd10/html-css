@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+</head>
+<style>
+    body{
+        background-color: azure;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+    }
+    header{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+    nav{
+        background-color: dimgray;
+        padding: 3px;
+        box-shadow: 6px 5px 8px rgba(0, 0, 0, 0.313);
+        border-radius: 3px;
+    }
+    nav > a{
+         color: white;
+         text-decoration: none;
+         font-weight: bold;
+         margin-right: 30px;
+         
+    }
+    nav >a:hover{
+     text-decoration: underline;
+
+    }
+    main{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+    article{
+        background-color: rgba(117, 117, 172, 0.699);
+    }
+    article > aside {
+        background-color: blue;
+        color: white;
+
+    }
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 2px;
+        margin: 0px;
+    }
+    footer > p {
+        margin:0px ;
+    }
+</style>
+<body>
+    <header>
+        <h1>meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">'</section>
+        <section id="noticia">
+        <article>
+            <h2>noticia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, neque assumenda accusantium quibusdam deleniti quasi in ea soluta minima pariatur iusto quo alias dolorem a ipsum provident quas repudiandae esse.</p>
+            <aside>
+                <p>escrito por mim</p>
+            </aside>
+        </article>
+        <article>
+
+        </article>
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido por wkd</p>
+    </footer>
+</body>
+</html>
