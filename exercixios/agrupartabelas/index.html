@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agrupar tabelas</title>
+    <style>
+        caption{
+            font-size: 1.5em;
+            padding: 8px;
+            font-weight: bold;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        col.cnome{
+            background-color: lightblue;
+        }
+        col.cgrupo{
+            background-color: cornsilk;
+        }
+        col.cprof{
+            background-color: rgba(0, 0, 0, 0.253);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <caption>cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>bruno</td>
+            <td>m</td>
+            <td>25</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>alam</td>
+            <td>m</td>
+            <td>20</td>
+            <td>medico</td>
+        </tr>
+        <tr>
+            <td>carla</td>
+            <td>F</td>
+            <td>23</td>
+            <td>nutricionista</td>
+        </tr>
+    </table>
+</body>
+</html>

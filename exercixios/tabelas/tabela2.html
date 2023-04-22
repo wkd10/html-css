@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        th,
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgrey;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>tabelas grandes</h1>
+    <!--
+        anatomia para tabelas grandes
+        table
+        caption(legenda)
+        thead
+        tr, th , td
+        tbody
+        tr, th , td
+        tfoot
+        tr, th , td
+    -->
+    <table>
+        <caption>
+            população dos estados
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">
+                    estado
+                </th>
+                <th scope="col" style="width: 100px;">
+                    população
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td>21 168</td>
+            </tr>
+            <tr>
+                <td>
+                    Rio de Janeiro
+                </td>
+                <td>777</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">total habitantes</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
