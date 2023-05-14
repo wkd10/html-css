@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f 5</title>
+</head>
+<body>
+    <h1>exemplo</h1>
+    <fieldset>
+        <legend>Sexo</legend>
+        <!--sempre o msm nome menos o id-->
+        <input type="radio" name="sexo" id="isxmas"><label for="isxmas" value="M">masculino</label>
+        <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">feminino</label>
+    </fieldset>
+    <fieldset>
+        <legend>esportes favoritos</legend>
+        <input type="checkbox" name="bas" id="ibas"> <label for="ibas">basquete</label>
+        <input type="checkbox" name="fut" id="ifut"> <label for="ifut">futsal</label>
+        <input type="checkbox" name="vol" id="ivol"> <label for="ivol">volei</label>
+        <input type="checkbox" name="han" id="ihan"> <label for="ihan">handeboll</label>
+    </fieldset>
+    <form action="cadastro.php" method="get">
+        <p>
+           <input type="submit" value="enviar">
+           <input type="reset" value="limpar"> 
+        </p>
+    </form>
+</body>
+</html>
